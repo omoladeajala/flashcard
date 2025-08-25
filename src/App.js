@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 export default function App() {
   return (
     <div className="App">
-<flashCard />
+      <flashCard />
     </div>
   );
 }
@@ -30,9 +30,9 @@ const questions = [
     answer: "Props"
   },
   {
-    id: "",
-    question: "What do we call an input element that is completely synchronized with the state of a React component?",
+    id: "2026",
+    question:
+      "What do we call an input element that is completely synchronized with the state of a React component?",
     answer: "Controlled component"
-  }
+  },
 ];
-
