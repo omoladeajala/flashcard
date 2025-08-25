@@ -40,9 +40,9 @@ const questions = [
 
 function FlashCard({ questions }) {
   return (
-    <div>
+    <div className="flashcards">
       {questions.map((question) => (
-        <div key={question.id}>
+        <div key={question.id} className="card">
           <p>{question.question}</p>
         </div>
       ))}

@@ -12,9 +12,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
-.flashcards div {
+.card {
   border: 1px solid #e7e7e7;
-  background-color: #f7f7f7;
+  background-color: #f7f7f7; 
+/* background-color: #d33; */
   border-radius: 7px;
   aspect-ratio: 2/1;
   display: flex;
