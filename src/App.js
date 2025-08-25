@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 export default function App() {
   return (
@@ -30,7 +31,7 @@ const questions = [
     answer: "Props",
   },
   {
-    id: "2026",
+    id: "2002",
     question:
       "What do we call an input element that is completely synchronized with the state of a React component?",
     answer: "Controlled component",
