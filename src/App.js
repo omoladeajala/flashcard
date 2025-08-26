@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import {useState} from "react";
 
 export default function App() {
   return (
@@ -31,6 +32,11 @@ const questions = [
     answer: "Props",
   },
   {
+    id: "9103",
+    question: "How to give component memory",
+    answer: "useState hook",
+  },
+  {
     id: "2002",
     question:
       "What do we call an input element that is completely synchronized with the state of a React component?",
@@ -39,11 +45,20 @@ const questions = [
 ];
 
 function FlashCard({ questions }) {
+  const [selectedId, setSelectedId] = useState(null);
+
+  function handleClick(id){
+  setSelectedId(id);
+};
+
   return (
     <div className="flashcards">
       {questions.map((question) => (
-        <div key={question.id} className="card">
-          <p>{question.question}</p>
+        <div 
+        key={question.id}
+        onClick={() => handleClick(question.id)} 
+          className={question.id === selectedId ? "selected" : ""}>
+          <p>{question.id === selectedId ? question.answer : question.question}</p>
         </div>
       ))}
     </div>
