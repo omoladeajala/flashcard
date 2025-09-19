@@ -57,11 +57,11 @@ function FlashCard({ questions }) {
         <div
           key={question.id}
           onClick={() => handleClick(question.id)}
-          className={
-            "card" + (question.id === selectedId ? " selected" : "")
-          }
+            className={
+              "card" + (question.id === selectedId ? " selected" : "")
+            }
         >
-          <p>{question.id === selectedId ? question.answer : question.question}</p>
+            <p>{question.id === selectedId ? question.answer : question.question}</p>
         </div>
       ))}
     </div>
